@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Plot a Histogram!</h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.crate.label }}<br>
+            {{ form.crate(size=32) }}
+        </p>
+        <p>
+            {{ form.slot.label }}<br>
+            {{ form.slot(size=32) }}
+        </p>
+        <p>
+            {{ form.channel.label }}<br>
+            {{ form.channel(size=32) }}
+        </p>
+        <p>
+            {{ form.table.label }}<br>
+            {{ form.table(size=32) }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+</body>
+</html>
